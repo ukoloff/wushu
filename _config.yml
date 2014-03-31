@@ -1,3 +1,7 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: false
+exclude:
+  - CNAME
+  - README.md
+  - run.bat
