@@ -5,3 +5,7 @@ exclude:
   - CNAME
   - README.md
   - run.bat
+redcarpet:
+  extensions:
+    - tables
+    - autolink
