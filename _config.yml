@@ -10,3 +10,5 @@ redcarpet:
   extensions:
     - tables
     - autolink
+gems:
+  - jekyll-redirect-from

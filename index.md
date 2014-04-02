@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Your New Jekyll Site
+redirect_from:
+  - /me
+  - /and/you
 ---
 
 Hi there!
