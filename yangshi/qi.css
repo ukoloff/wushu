@@ -62,10 +62,7 @@ table {
 #hmenu a {
   display: inline-block;
   padding: 1ex;
-  border-width: 0 1px;
-  border-style: solid;
-  border-left-color:  rgba(255, 255, 255, .27);
-  border-right-color: rgba(0, 0, 0, .27);
+  border: 1px outset #404b56;
   color: #ced4da;
   text-decoration: none;
 }
