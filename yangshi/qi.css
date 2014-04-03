@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   width: 988px;
   height: 286px;
-  background-image: url(/images/header.png);
+  background-image: url(/huabao/header.png);
 }
 
 #header div {
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   width: 386px;
   height: 284px;
-  background-image: url(/images/htext.png);
+  background-image: url(/huabao/htext.png);
 }
 
 #header dl {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   padding: 0.5ex;
   background-color: #70767c;
-  background-image: url(/images/vmenu.png);
+  background-image: url(/huabao/vmenu.png);
   background-repeat: repeat-y;
   text-align: left;
   vertical-align: top;
