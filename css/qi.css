@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 #wen {
   width: 100%;
   text-align: justify;
+  vertical-align: top;
 }
 
 #footer {
