@@ -30,5 +30,5 @@
 </tr></table>
 
 <div id='footer' class='noise'></div>
-{% if site.github %}{% else %}<a id='github' href='http://wushu.ukoloff.tk/' target='gh-pages'>View on GitHub Pages</a>{% endif %}
+{% unless site.github %}<a id='github' href='http://wushu.ukoloff.tk/' target='gh-pages'>View on GitHub Pages</a>{% endunless %}
 </body></html>
