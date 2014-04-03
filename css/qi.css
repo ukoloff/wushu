@@ -93,6 +93,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: gray;
 }
 
+#vmenu a.active {
+  color: black;
+  background: silver;
+}
+
+
 #wen {
   width: 100%;
   padding: 1ex;
