@@ -21,7 +21,7 @@
 
 <table id='duilian'><tr>
 <td id='vmenu'>{% for z in site.data.vmenu %}
-  <a href="{{z.url}}">{{z.text}}</a>{% endfor %}
+  <a href="{{z.url}}"{% if page.url == z.url %} class='active'{%endif%}>{{z.text}}</a>{% endfor %}
 </td>
 <td id='wen'>
 <h1>{{ page.title }}</h1>
