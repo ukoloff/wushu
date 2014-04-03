@@ -19,7 +19,7 @@
   href="{{z.url}}">{{z.text}}</a>{% endfor %}
 </div>
 
-<table id='duilian'><tr>
+<table><tr>
 <td id='vmenu'>{% for z in site.data.vmenu %}
   <a href="{{z.url}}"{% if page.url == z.url %} class='active'{%endif%}>{{z.text}}</a>{% endfor %}
 </td>
