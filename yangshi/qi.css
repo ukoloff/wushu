@@ -57,18 +57,17 @@ table {
 #hmenu {
   background-color: #404b56;
   background: linear-gradient(#121519, #485460);
-  padding: 1ex 0;
-  white-space: nowrap;
 }
 
 #hmenu a {
-  color: #ced4da;
-  text-decoration: none;
+  display: inline-block;
   padding: 1ex;
   border-width: 0 1px;
   border-style: solid;
   border-left-color:  rgba(255, 255, 255, .27);
   border-right-color: rgba(0, 0, 0, .27);
+  color: #ced4da;
+  text-decoration: none;
 }
 
 #hmenu a:hover{
