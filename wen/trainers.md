@@ -2,7 +2,7 @@
 layout: default
 title: Тренеры
 ---
-<img src='/huabao/ren/belousov.jpg' alt='А.В. Белоусов' align='left'>
+<img src='/huabao/ren/belousov.jpg' alt='А.В. Белоусов' width='350' align='left'>
 ##Белоусов Алексей Васильевич
 
 Руководитель клуба, тренер.
@@ -15,7 +15,7 @@ title: Тренеры
 
 <br clear='left'>
 <hr>
-<img src='/huabao/ren/bizhova.jpg' alt='А.В. Бижова' align='left'>
+<img src='/huabao/ren/bizhova.jpg' alt='А.В. Бижова' width='350' align='left'>
 
 ##Бижова Александра Васильевна
 
