@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+#header {
+  position: relative;
+  margin: auto;
+  width: 988px;
+  height: 286px;
+  background-image: url(/images/header.png);
+}
+
 #hmenu {
   background-color: #404b56;
   background: linear-gradient(#121519, #485460);
