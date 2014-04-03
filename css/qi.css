@@ -22,13 +22,31 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(/images/header.png);
 }
 
-#header #name {
+#header div {
   position: absolute;
   left: 280px;
   top: 0px;
   width: 386px;
   height: 284px;
   background-image: url(/images/htext.png);
+}
+
+#header dl {
+  position: absolute;
+  left: 700px;
+  top: 125px;
+  margin: 0;
+  text-align: left;
+  font-size: 160%;
+}
+
+#header dd {
+  margin: 0;
+  font-weight: bold;
+}
+
+#header dt {
+  color: #5C0000;
 }
 
 #hmenu {
