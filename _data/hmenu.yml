@@ -1,0 +1,12 @@
+- url: /
+  text: Новости
+- url: /wen/about.html
+  text: О школе
+- url: /wen/trainers.html
+  text: Тренеры
+- url: /wen/schedule.html
+  text: Расписание
+- url: /wen/price.html
+  text: Стоимость
+- url: /wen/contact.html
+  text: Контакты

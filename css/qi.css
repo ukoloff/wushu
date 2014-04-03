@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #404b56;
   background: linear-gradient(#121519, #485460);
   padding: 1ex;
+  white-space: nowrap;
 }
 
 #hmenu a {
