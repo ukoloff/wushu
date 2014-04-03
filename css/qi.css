@@ -70,6 +70,33 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+#duilian {
+  border-collapse: collapse;
+}
+
+#vmenu {
+  white-space: nowrap;
+  background-color: #70767c;
+  text-align: left;
+  vertical-align: top;
+}
+
+#vmenu a {
+  display: block;
+  padding: 1ex;
+  text-decoration: none;
+  color: white;
+}
+
+#vmenu a:hover {
+  background-color: gray;
+}
+
+#wen {
+  width: 100%;
+  text-align: justify;
+}
+
 #footer {
   background-color: #45515b;
   min-height: 3em;
