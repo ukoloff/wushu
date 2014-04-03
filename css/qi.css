@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(/images/header.png);
 }
 
+#header #name {
+  position: absolute;
+  left: 280px;
+  top: 0px;
+  width: 386px;
+  height: 284px;
+  background-image: url(/images/htext.png);
+}
+
 #hmenu {
   background-color: #404b56;
   background: linear-gradient(#121519, #485460);
