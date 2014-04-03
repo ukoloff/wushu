@@ -13,3 +13,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
+#hmenu {
+  background-color: #404b56;
+  padding: 1ex;
+}
+
+#hmenu a {
+  color: #ced4da;
+  text-decoration: none;
+  padding: 1ex;
+  border-width: 0 1px;
+  border-style: solid;
+  border-left-color:  rgba(255, 255, 255, .27);
+  border-right-color: rgba(0, 0, 0, .27);
+}
+
+#hmenu a:hover{
+  color: white;
+}
