@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   color: black;
-  background-color: white;
+  background-color: #bddafb;
+  background: linear-gradient(#bddafb, white);
   font-family: Arial, Helvetica, Sans-Serif;
   font-style: normal;
   font-weight: normal;
@@ -94,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #wen {
   width: 100%;
+  padding: 1ex;
+  background-color: white;
   text-align: justify;
   vertical-align: top;
 }
