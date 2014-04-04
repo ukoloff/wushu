@@ -3,4 +3,9 @@ layout: default
 title:  Все новости
 ---
 
-{{ paginator }}
+{% for z in paginator.posts %}
+  <h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
+  <div class='content'>
+    {{z.excerpt}}
+  </div>
+{% endfor %}
