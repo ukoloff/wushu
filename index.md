@@ -13,7 +13,7 @@ title: Ушу в Екатеринбурге
       {% if imp > 0 %}{% assign active = 1 %}{% endif %}
     {% endif %}
     {% if active > 0 %}
-<h3>{% if z.important%}+{% endif %}<a href="{{ z.url }}">{{ z.title }}</a></h1>
+<h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
 <div class='content'>
   {{z.excerpt}}
 </div>
