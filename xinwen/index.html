@@ -9,3 +9,15 @@ title:  Все новости
     {{z.excerpt}}
   </div>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class='paginator'>
+{% if paginator.previous_page %}
+<a href="{{ paginator.previous_page_path }}">Назад</a>
+{% endif %}
+{% if paginator.next_page %}
+<a href="{{ paginator.next_page_path }}">Вперёд</a>
+{% endif %}
+</div>
+
+{% endif %}
