@@ -39,10 +39,10 @@ table {
 #header dl {
   position: absolute;
   left: 700px;
-  top: 125px;
+  top: 120px;
   margin: 0;
   text-align: left;
-  font-size: 160%;
+  font-size: 25px;
 }
 
 #header dd {
