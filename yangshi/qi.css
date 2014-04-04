@@ -134,3 +134,20 @@ table {
   text-decoration: none;
   font-size: 62%;
 }
+
+table.schedule {
+  margin: auto;
+  text-align: center;
+}
+
+table.schedule td, table.schedule th {
+  border: solid 1px black;
+}
+
+table.schedule td.on {
+  background: #afeeee;
+}
+
+table.schedule td.off {
+  color: red;
+}
