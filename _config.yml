@@ -3,6 +3,8 @@ encoding: utf-8
 markdown: redcarpet
 pygments: false
 permalink: /xinwen/:year/:month/:day/:title/
+paginate: 2
+paginate_path: /xinwen/page:num
 
 exclude:
   - CNAME
