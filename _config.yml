@@ -2,14 +2,18 @@ name: Your New Jekyll Site
 encoding: utf-8
 markdown: redcarpet
 pygments: false
+permalink: /xinwen/:year/:month/:day/:title/
+
 exclude:
   - CNAME
   - README.md
   - run.bat
   - orig
+
 redcarpet:
   extensions:
     - tables
     - autolink
+
 gems:
   - jekyll-redirect-from
