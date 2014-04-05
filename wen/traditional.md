@@ -18,7 +18,7 @@ title:  Традиционное ушу
 * Дуйлянь (парная тренировка) и прикладные аспекты
 * Упражнения с оружием (меч цзянь, меч дао, веер, палка, копье, парные мечи и др.)
 
-<img src='/huabao/ren/bagua.jpg' width='340' alt='Багуачжан' align='right'>
+<img src='/huabao/ren/bagua.jpg' width='340' alt='Багуачжан' class='text-right'>
 
 ##Багуачжан
 
@@ -37,7 +37,7 @@ title:  Традиционное ушу
 * Оружие Багуа (меч цзянь, парные серпы-полумесяцы, копье, копье с двумя наконечниками)
 
 <br clear='both'>
-<img src='/huabao/ren/xinyi.jpg' alt='Багуачжан' align='left'>
+<img src='/huabao/ren/xinyi.jpg' alt='Багуачжан' class='text-left'>
 
 ##Синьицюань
 

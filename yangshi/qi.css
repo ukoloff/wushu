@@ -216,3 +216,15 @@ table.schedule td.off {
 .text-center {
   text-align: center;
 }
+
+img.text-left {
+  float: left;
+  margin: 1ex;
+  margin-left: 0;
+}
+
+img.text-right {
+  float: right;
+  margin: 1ex;
+  margin-right: 0;
+}
