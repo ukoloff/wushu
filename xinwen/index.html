@@ -4,10 +4,11 @@ title:  Все новости
 ---
 
 {% for z in paginator.posts %}
-  <h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
-  <div class='content'>
-    {{z.excerpt}}
-  </div>
+<!-- {{ forloop.index }} ({{ paginator.page }} / {{ paginator.total_pages }} * {{ paginator.per_page }}) -->
+<h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
+<div class='excerpt'>
+{{ z.excerpt }}
+</div>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
