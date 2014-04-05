@@ -5,27 +5,19 @@ title: Ушу в Екатеринбурге
 ---
 <h2>欢迎!</h2>
 
-{% assign paginate = page.paginate %}
+{% assign paginate = page.paginate %}{% assign posts = 0 %}
 {% unless paginate %}{% assign paginate = site.paginate %}{% endunless %}
 {% unless paginate %}{% assign paginate = 3 %}{% endunless %}
-{% assign posts = 0 %}
-{% for imp in (0..1) %}
-  {% for z in site.posts %}
-    {% assign active = 0 %}
-    {% if z.important %}
-      {% if imp == 0 %}{% assign active = 1 %}{% endif %}
-    {% else %}
-      {% if imp > 0 and posts < paginate %}{% assign active = 1 %}{% endif %}
-    {% endif %}
-    {% if active > 0 %}
-{% assign posts = posts | plus: 1 %}<!--{{posts}}-->
+{% for imp in (0..1) %}{% for z in site.posts %}{% assign active = 0 %}
+  {% if z.important %}{% if imp == 0 %}{% assign active = 1 %}{% endif %}
+  {% else %}{% if imp > 0 and posts < paginate %}{% assign active = 1 %}{% endif %}{% endif %}
+  {% if active > 0 %}{% assign posts = posts | plus: 1 %}
+<!-- {{posts}} -->
 <h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
-<div class='content'>
-  {{z.excerpt}}
+<div class='excerpt'>
+{{ z.excerpt }}
 </div>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+  {% endif %}
+{% endfor %}{% endfor %}
 
 <div id='paginator'><a href='/xinwen/'>Все новости</a></div>
-
