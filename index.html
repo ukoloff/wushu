@@ -4,7 +4,7 @@ title: Ушу в Екатеринбурге
 no-disqus: true
 #paginate: 3
 ---
-<h2>欢迎!</h2>
+欢迎!
 {% capture EOLS %}
 {% assign paginate = page.paginate %}
 {% assign posts = 0 %}
@@ -18,9 +18,10 @@ no-disqus: true
   {% endif %}
   {% endcapture %}{% if active > 0 %}{% assign posts = posts | plus: 1 %}
 <!-- {{posts}} -->
-<h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
 <div class='excerpt'>
+<h2><a href="{{ z.url }}">{{ z.title }}</a></h1>
+<div>
 {{ z.excerpt }}
-</div>{% endif %}{% endfor %}{% endfor %}
+</div></div>{% endif %}{% endfor %}{% endfor %}
 
 <div id='paginator'><a href='/xinwen/'>Все новости</a></div>
