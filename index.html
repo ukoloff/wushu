@@ -1,9 +1,13 @@
 ---
 layout: default
 title: Ушу в Екатеринбурге
+#paginate: 5
 ---
 <h2>欢迎!</h2>
 
+{% assign paginate = page.paginate %}
+{% unless paginate %}{% assign paginate = site.paginate %}{% endunless %}
+{% unless paginate %}{% assign paginate = 3 %}{% endunless %}
 {% for imp in (0..1) %}
   {% for z in site.posts %}
     {% assign active = 0 %}
