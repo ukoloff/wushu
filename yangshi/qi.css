@@ -151,3 +151,19 @@ table.schedule td.on {
 table.schedule td.off {
   color: red;
 }
+
+#paginator {
+  text-align: center;
+  border-top: 1px dashed black;
+  padding-top: 1px;
+  margin-top: 2em;
+  font-size: 87%;
+}
+
+#paginator .left {
+  float: left;
+}
+
+#paginator .right {
+  float: right;
+}
