@@ -8,8 +8,7 @@ title:  Все новости
 <h3><a href="{{ z.url }}">{{ z.title }}</a></h1>
 <div class='excerpt'>
 {{ z.excerpt }}
-</div>
-{% endfor %}
+</div>{% endfor %}
 
 {% if paginator.total_pages > 1 %}
 <div id='paginator'>
@@ -21,5 +20,4 @@ title:  Все новости
 <a href="{{ paginator.next_page_path }}/" class='right'>Ещё</a>
 {% endif %}
 </div>
-
 {% endif %}
