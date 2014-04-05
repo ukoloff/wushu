@@ -34,10 +34,11 @@
   ruby dk.rb install
   ```
 3. Установить необходимые пакеты
+
   ```sh
-    gem install jekyll
-    gem install jekyll-redirect-from
-    gem install wdm
+  gem install jekyll
+  gem install jekyll-redirect-from
+  gem install wdm
   ```
 
 ### Git
