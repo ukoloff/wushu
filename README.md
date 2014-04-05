@@ -4,17 +4,18 @@
 
 ## Используемые технологии
 
-* [GitHub Pages](https://pages.github.com/)
+* [GitHub Pages](https://pages.github.com/) - хостинг **статических** сайтов
   - [Git](http://git-scm.com/)
   - [GitHub](https://github.com/)
-* [Jekyll](http://jekyllrb.com/)
+* [Jekyll](http://jekyllrb.com/) - программа для генерации статических сайтов
   - Языки разметки
     + [HTML](http://ru.wikipedia.org/wiki/HTML)
     + [Markdown](http://ru.wikipedia.org/wiki/Markdown)
     + [Textile](http://ru.wikipedia.org/wiki/Textile_(%D1%8F%D0%B7%D1%8B%D0%BA_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8))
-  - [Liquid](http://liquidmarkup.org/)
-  - [CSS](http://ru.wikipedia.org/wiki/CSS)
+  - [Liquid](http://liquidmarkup.org/) - язык шаблонов для генерации сложных страниц
+  - [CSS](http://ru.wikipedia.org/wiki/CSS) - язык описания дизайна Веб-страниц
   - [YAML](http://ru.wikipedia.org/wiki/YAML)
+* [Disqus](http://disqus.com/) - сервис комментариев
 
 ## Установка
 
