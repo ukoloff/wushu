@@ -9,13 +9,14 @@
   - [GitHub](https://github.com/)
 * [Jekyll](http://jekyllrb.com/) - программа для генерации статических сайтов
   - Языки разметки
-    + [HTML](http://ru.wikipedia.org/wiki/HTML)
-    + [Markdown](http://ru.wikipedia.org/wiki/Markdown)
+    + [HTML](http://ru.wikipedia.org/wiki/HTML) - основной язык разметки вебстраниц
+    + [Markdown](http://ru.wikipedia.org/wiki/Markdown) - простой язык, транслируемый в HTML
     + [Textile](http://ru.wikipedia.org/wiki/Textile_(%D1%8F%D0%B7%D1%8B%D0%BA_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8))
   - [Liquid](http://liquidmarkup.org/) - язык шаблонов для генерации сложных страниц
   - [CSS](http://ru.wikipedia.org/wiki/CSS) - язык описания дизайна Веб-страниц
   - [YAML](http://ru.wikipedia.org/wiki/YAML)
 * [Disqus](http://disqus.com/) - сервис комментариев
+* [Dot TK](http://www.dot.tk/) - бесплатная регистрация доменных имён .tk
 
 ## Установка
 
@@ -56,3 +57,24 @@
 Крайне рекомендуется пользоваться качественным редактором, например [SublimeText](http://www.sublimetext.com/) -
 периодически предлагает заплатить, но работает и так ;-)
 
+Рекомендуется добавить в настройки SublimeText (Preferenses / Settings - User)
+
+  ```
+    "default_line_ending": "unix",
+    "ensure_newline_at_eof_on_save": true,
+    "fade_fold_buttons": false,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "use_tab_stops": true,
+    "word_wrap": false
+   ```
+### GitHub
+
+Требуется зарегистрировать учётную запись на [GitHub](https://github.com/)
+
+### Dot TK
+
+Если нужно доменное имя в домене .tk, потребуется учётная запись в [Dot TK](http://www.dot.tk/)
+(можно использовать учётные записи  [Facebook](https://www.facebook.com/) или
+[Google](https://www.google.ru/))
