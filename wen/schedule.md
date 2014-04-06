@@ -94,6 +94,4 @@ title: Расписание
 </tr>
 </table>
 
-<center>
-<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=ASDcfn1yCGnDSv7BixmhXw3UKT4u-8EQ&width=100%25&height=450"></script>
-</center>
+Расположение тренировочных залов указано на странице [Контакты](contact.html)
