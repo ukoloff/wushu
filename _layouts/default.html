@@ -41,7 +41,8 @@
 </tr></table>
 
 <div id='footer' class='noise'>
-&copy; {{ site.time | date: '%Y' }}, {{ site.name }}
+&copy;{% assign year0 = '2014' %}{% assign year = site.time | date: '%Y' %}
+{% if year0 < year %}{{year0}} - {% endif %}{{year}}, {{ site.name }}
 </div>
 {% unless site.github %}<div class='devel'>{%for link in site.data.devlinks %}
 <a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>
