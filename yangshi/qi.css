@@ -108,7 +108,9 @@ table {
 
 #footer {
   background-color: #45515b;
-  min-height: 3em;
+  padding: 1em 1ex;
+  text-align: left;
+  font-size: 70%;
 }
 
 .noise {

@@ -40,7 +40,9 @@
 </td>
 </tr></table>
 
-<div id='footer' class='noise'></div>
+<div id='footer' class='noise'>
+&copy; {{ site.time | date: '%Y' }}, {{ site.name }}
+</div>
 {% unless site.github %}<div class='devel'>{%for link in site.data.devlinks %}
 <a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>
 {% endfor %}</div>{% endunless %}
