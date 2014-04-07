@@ -1,6 +1,9 @@
 gh-pages:
   url: http://wushu.ukoloff.tk/
   text: GitHub Pages
+original:
+  url: http://www.wushu-ekb.ru/
+  text: Оригинал
 github:
   url: https://github.com/ukoloff/wushu
   text: GitHub

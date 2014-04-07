@@ -141,6 +141,10 @@ table {
   display: block;
   text-decoration: none;
   color: black;
+  background: silver;
+  border: 1px solid gray;
+  border-radius: 0.9ex;
+  padding: 0.1ex;
 }
 
 .devel a:hover {
