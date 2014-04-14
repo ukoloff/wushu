@@ -13,7 +13,7 @@ setTimeout(function(){
 <form>\
 Укажите Ваш телефон<br>и мы Вам перезвоним:<br>\
 <label><div>Имя</div><input type="text" name="name"></label>\
-<label><div>Телефон</div><input type="text" name="tel" autofocus></label>\
+<label><div>Телефон</div><input type="text" name="tel" autofocus required></label>\
 <label><div>E-mail</div><input type="text" name="mail"></label>\
 <label><div>Когда удобно звонить</div><input type="text" name="time"></label>\
 <label><div>Примечания</div><textarea name="notes"></textarea></label>\
@@ -21,8 +21,7 @@ setTimeout(function(){
 </form>\
 '
     popup.getElementsByTagName('a')[0].onclick=hide
-    z=popup.getElementsByTagName('input')
-    z[z.length-1].onclick=hide
+    popup.getElementsByTagName('form')[0].onsubmit=hide
     return popup
   }
 
