@@ -17,6 +17,7 @@
   - [YAML](http://ru.wikipedia.org/wiki/YAML) - язык записи произвольных данных в удобочитаемом виде
 * [Disqus](http://disqus.com/) - сервис комментариев
 * [Dot TK](http://www.dot.tk/) - бесплатная регистрация доменных имён .tk
+* [Simple Form](http://getsimpleform.com/) - отправка веб-форм с уведомлением владельцу
 
 ## Установка
 
