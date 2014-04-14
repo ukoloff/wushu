@@ -73,6 +73,26 @@ table {
   font-size: 87%;
 }
 
+#header dl h2 {
+  font-size: 60%;
+  color: yellow;
+  background: navy;
+}
+
+#header form {
+  padding: 0.5ex;
+}
+
+a.close {
+  float: right;
+  text-decoration: none;
+  color: lime;
+}
+
+a.close:hover {
+  color: red;
+}
+
 #hmenu {
   background-color: #404b56;
   background: linear-gradient(#121519, #485460);

@@ -9,7 +9,12 @@ setTimeout(function(){
 
   function linpen(){
     popup=document.createElement('div')
-    popup.innerHTML='Hi there!'
+    popup.innerHTML='<h2>Обратный звонок<a href="#" class="close" title="Закрыть">&times;</a></h2>\
+<form>\
+Введите номер телефона\
+</form>\
+'
+    popup.getElementsByTagName('a')[0].onclick=hide
     return popup
   }
 
