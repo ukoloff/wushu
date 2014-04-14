@@ -27,7 +27,7 @@ table {
   background-image: url(/huabao/header.png);
 }
 
-#header div {
+#header>div {
   position: absolute;
   left: 280px;
   top: 0px;
@@ -39,7 +39,7 @@ table {
 #header dl {
   position: absolute;
   left: 700px;
-  top: 120px;
+  top: 110px;
   margin: 0;
   text-align: left;
   font-size: 25px;
@@ -52,6 +52,24 @@ table {
 
 #header dt {
   color: #5C0000;
+}
+
+#header dl>a {
+  font-size: 75%;
+  color: navy;
+  text-decoration: none;
+}
+
+#header dl>a:hover {
+  color: blue;
+}
+
+#header dl>div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: silver;
+  border: ridge;
 }
 
 #hmenu {
