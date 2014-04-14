@@ -54,7 +54,48 @@ setTimeout(function(){
       this.tel.focus()
       return false
     }
+    info('Отправка сообщения', 'info')
+    jsonp(x)
     return false
+  }
+
+  function random(q){
+    var s=''
+    while(s.length<q){
+      n=Math.floor(62*Math.random())
+      s+=String.fromCharCode(n%26+'Aa0'.charCodeAt(n/26))
+    }
+    return s
+  }
+
+  function jsonp(data)
+  {
+    var r
+    do r='_'+random(15); while(window[r])
+    window[data.callback=r]=Fire
+
+    var s=''
+    for(var k in data) s+=(s.length?'&':'')+k+'='+escape(data[k])
+    var js=document.createElement('script');
+    js.src="http://getsimpleform.com/messages/ajax?"+s;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(js);
+
+    console.log(s)
+    return false
+
+    function Clear(){
+      delete window[r]
+      js.parentNode.removeChild(js)
+    }
+
+    function Fire(data){
+      Clear()
+      if(!data.success) return info('Сбой отправки сообщения', 'error')
+      info('Сообщение отправлено', 'success')
+      var f=popup.getElementsByTagName('form')[0]
+      f.onsubmit=hide
+      f[f.length-1].value='Закрыть'
+    }
   }
 
 }, 0)

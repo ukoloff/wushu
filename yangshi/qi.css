@@ -89,6 +89,10 @@ table {
   font-size: 62%;
 }
 
+#header form>div {
+  font-size: 75%;
+}
+
 #header form input, #header form textarea {
   width: 100%;
   box-sizing: border-box;
