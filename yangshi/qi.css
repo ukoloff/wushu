@@ -92,6 +92,7 @@ table {
 #header form input, #header form textarea {
   width: 100%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 a.close {
