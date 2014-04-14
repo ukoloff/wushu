@@ -2,7 +2,8 @@
 <html><head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">{% unless site.github %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">{% endunless %}
     <link rel="stylesheet" href="/yangshi/qi.css">{% if page.css %}{% for x in page.css %}
     <link rel="stylesheet" href="{% if x contains '/' or x contains '.' %}{{ x }}{% else %}/yangshi/{{ x }}.css{% endif %}">{% endfor %}{% endif %}
     <script src="/js/huitiao.js"></script>{% if page.js %}{% for x in page.js %}
