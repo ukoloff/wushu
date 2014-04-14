@@ -1,6 +1,6 @@
+---
+---
 setTimeout(function(){
-  var simpleFormToken='eb9a015c630904b0a5e1e3921dbc2b48'
-
   var popup, a=document.getElementById('header').getElementsByTagName('a')[0]
 
   a.onclick=function(){
@@ -47,7 +47,7 @@ setTimeout(function(){
 
   function send()
   {
-    var x={form_api_token: simpleFormToken, url: location.href}
+    var x={form_api_token: '{{site.data.tokens.simple-form}}', url: location.href}
     for(var i=this.length-1; i>=0; i--)
       if(this[i].name) x[this[i].name]=this[i].value.replace(/^\s+|\s+$/g, '')
     if(x.tel.replace(/\D+/g, '').length<7)
