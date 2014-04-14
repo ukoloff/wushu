@@ -1,7 +1,15 @@
 setTimeout(function(){
-  var a=document.getElementById('header').getElementsByTagName('a')[0]
+  var popup, a=document.getElementById('header').getElementsByTagName('a')[0]
+
   a.onclick=function(){
-    alert('Hi there!')
+    if(popup){
+      popup.remove()
+      popup=null
+      return false
+    }
+    popup=document.createElement('div')
+    popup.innerHTML='Hi there!'
+    a.parentElement.appendChild(popup)
     return false
   }
 }, 0)
