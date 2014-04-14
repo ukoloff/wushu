@@ -69,7 +69,8 @@ table {
   top: 0;
   right: 0;
   background: silver;
-  border: ridge;
+  border: 1px solid black;
+  font-size: 87%;
 }
 
 #hmenu {
