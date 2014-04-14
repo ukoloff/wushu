@@ -66,21 +66,35 @@ table {
 
 #header dl>div {
   position: absolute;
+  z-index: 1000;
   top: 0;
   right: 0;
   background: silver;
   border: 1px solid black;
-  font-size: 87%;
+  font-size: 75%;
+  white-space: nowrap;
 }
 
 #header dl h2 {
-  font-size: 60%;
+  font-size: 75%;
   color: yellow;
   background: navy;
 }
 
 #header form {
   padding: 0.5ex;
+}
+
+#header form label>div {
+  font-size: 62%;
+}
+
+#header form input, #header form textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 1px solid black;
 }
 
 a.close {
