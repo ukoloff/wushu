@@ -27,7 +27,7 @@ setTimeout(function(){
   }
 
   function hide(){
-    popup.remove()
+    popup.parentNode.removeChild(popup)
     popup=null
     return false
   }
