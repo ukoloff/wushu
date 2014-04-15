@@ -12,7 +12,7 @@ setTimeout(function(){
   function linpen(){
     popup=document.createElement('div')
     popup.innerHTML='<h2>Обратный звонок<a href="#" class="close" title="Закрыть">&times;</a></h2>\
-<form>\
+<form autocomplete="off">\
 Укажите Ваш телефон<br>и мы Вам перезвоним:<br>\
 <label><div>Имя</div><input type="text" name="name"></label>\
 <label><div>Телефон (<span class="text-error">обязательно</span>)</div><input type="text" name="tel" autofocus required></label>\
