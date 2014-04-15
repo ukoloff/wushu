@@ -47,7 +47,7 @@ setTimeout(function(){
 
   function send()
   {
-    var x={form_api_token: '{{site.data.tokens.simple-form}}', url: location.href}
+    var x={form_api_token: '{{site.data.tokens.simple-form}}'}
     for(var i=this.length-1; i>=0; i--)
       if(this[i].name) x[this[i].name]=this[i].value.replace(/^\s+|\s+$/g, '')
     if(x.tel.replace(/\D+/g, '').length<7)
@@ -83,7 +83,9 @@ setTimeout(function(){
     window[data.callback=r]=Fire
 
     var s=''
-    for(var k in data) s+=(s.length?'&':'')+k+'='+escape(data[k])
+    for(var k in data)
+      if(data[k])
+        s+=(s.length?'&':'')+k+'='+encodeURIComponent(data[k])
     var js=document.createElement('script');
     js.src="http://getsimpleform.com/messages/ajax?"+s;
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(js);
