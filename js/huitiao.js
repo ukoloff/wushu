@@ -89,9 +89,7 @@ setTimeout(function(){
     var js=document.createElement('script');
     js.src="http://getsimpleform.com/messages/ajax?"+s;
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(js);
-
-    console.log(s)
-    return false
+    setTimeout(Error, 3000)
 
     function Clear(){
       delete window[r]
@@ -106,6 +104,11 @@ setTimeout(function(){
       f.onsubmit=hide
       f[f.length-1].value='Закрыть'
     }
+
+    function Error(){
+      Clear()
+      info('Сбой отправки сообщения', 'error')
+    }
   }
 
-}, 0)
+}, 100)
