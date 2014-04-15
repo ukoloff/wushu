@@ -12,7 +12,7 @@ setTimeout(function(){
   function linpen(){
     popup=document.createElement('div')
     popup.innerHTML='<h2>Обратный звонок<a href="#" class="close" title="Закрыть">&times;</a></h2>\
-<form>\
+<form autocomplete="off">\
 Укажите Ваш телефон<br>и мы Вам перезвоним:<br>\
 <label><div>Имя</div><input type="text" name="name"></label>\
 <label><div>Телефон (<span class="text-error">обязательно</span>)</div><input type="text" name="tel" autofocus required></label>\
@@ -47,7 +47,7 @@ setTimeout(function(){
 
   function send()
   {
-    var x={form_api_token: '{{site.data.tokens.simple-form}}', url: location.href}
+    var x={form_api_token: '{{site.data.tokens.simple-form}}'}
     for(var i=this.length-1; i>=0; i--)
       if(this[i].name) x[this[i].name]=this[i].value.replace(/^\s+|\s+$/g, '')
     if(x.tel.replace(/\D+/g, '').length<7)
@@ -83,13 +83,13 @@ setTimeout(function(){
     window[data.callback=r]=Fire
 
     var s=''
-    for(var k in data) s+=(s.length?'&':'')+k+'='+escape(data[k])
+    for(var k in data)
+      if(data[k])
+        s+=(s.length?'&':'')+k+'='+encodeURIComponent(data[k])
     var js=document.createElement('script');
     js.src="http://getsimpleform.com/messages/ajax?"+s;
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(js);
-
-    console.log(s)
-    return false
+    setTimeout(Error, 3000)
 
     function Clear(){
       delete window[r]
@@ -104,6 +104,11 @@ setTimeout(function(){
       f.onsubmit=hide
       f[f.length-1].value='Закрыть'
     }
+
+    function Error(){
+      Clear()
+      info('Сбой отправки сообщения', 'error')
+    }
   }
 
-}, 0)
+}, 100)
