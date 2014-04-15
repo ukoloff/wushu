@@ -92,12 +92,15 @@ setTimeout(function(){
     setTimeout(Error, 3000)
 
     function Clear(){
+      if(!js) return
       delete window[r]
       js.parentNode.removeChild(js)
+      js=null
+      return true
     }
 
     function Fire(data){
-      Clear()
+      if(!Clear()) return
       if(!data.success) return info('Сбой отправки сообщения', 'error')
       info('Сообщение отправлено', 'success')
       var f=popup.getElementsByTagName('form')[0]
@@ -106,7 +109,7 @@ setTimeout(function(){
     }
 
     function Error(){
-      Clear()
+      if(!Clear()) return
       info('Сбой отправки сообщения', 'error')
     }
   }
