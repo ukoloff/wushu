@@ -86,7 +86,8 @@ setTimeout(function(){
     for(var k in data)
       if(data[k])
         s+=(s.length?'&':'')+k+'='+encodeURIComponent(data[k])
-    var js=document.createElement('script');
+    var js=document.createElement('script')
+    js.onerror = Error
     js.src="http://getsimpleform.com/messages/ajax?"+s;
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(js);
     setTimeout(Error, 3000)
