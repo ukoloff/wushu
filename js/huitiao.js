@@ -95,6 +95,7 @@ setTimeout(function(){
     function Clear(){
       if(!js) return
       delete window[r]
+      js.onerror=null
       js.parentNode.removeChild(js)
       js=null
       return true
