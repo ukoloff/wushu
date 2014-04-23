@@ -57,14 +57,14 @@ table {
   color: #5C0000;
 }
 
-a#huitiao {
+#huitiao {
   font-size: 75%;
   color: navy;
   text-decoration: none;
 }
 
-a#huitiao:hover {
-  color: blue;
+#huitiao:hover {
+  text-decoration: underline;
 }
 
 #huitiao-popup {
