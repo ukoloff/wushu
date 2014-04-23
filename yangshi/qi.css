@@ -179,7 +179,7 @@ a#huitiao:hover {
   font-size: 70%;
 }
 
-.noise {
+*>.noise {
   position: relative;
   z-index: 1;
 }
