@@ -14,3 +14,6 @@
   text: Материалы
 - url:  /wen/gallery.html
   text: Галерея
+  items:
+  - url: /wen/video.html
+    text: Видео

@@ -28,7 +28,16 @@
 
 <table><tr>
 <td id='vmenu'>{% for z in site.data.vmenu %}
-  <a href="{{z.url}}"{% if page.url == z.url %} class='active'{%endif%}>{{z.text}}</a>{% endfor %}
+  <a href="{{z.url}}"{% if page.url == z.url %} class='active'{%endif%}>{{z.text}}</a>
+  {% assign urls = z.items | map: 'url' %}
+  {% if z.items %}{% if page.url == z.url or urls contains page.url ) %}
+    <div>
+    {% for zz in z.items %}
+      <a href="{{zz.url}}"{% if page.url == zz.url %} class='active'{%endif%}>{{zz.text}}</a>
+    {% endfor %}
+    </div>
+  {% endif %}{% endif %}
+  {% endfor %}
 </td>
 <td id='zhi'>
 <h1>{{ page.title }}</h1>

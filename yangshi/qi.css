@@ -163,6 +163,10 @@ table {
   background: silver;
 }
 
+#vmenu div {
+  margin-left: 1em;
+  font-size: 90%;
+}
 
 #zhi {
   width: 100%;
