@@ -27,7 +27,7 @@ table {
   background-image: url(/huabao/header.png);
 }
 
-#header>div {
+#header #title {
   position: absolute;
   left: 280px;
   top: 0px;
@@ -36,13 +36,16 @@ table {
   background-image: url(/huabao/htext.png);
 }
 
-#header dl {
+#header #phone {
   position: absolute;
   left: 700px;
   top: 110px;
-  margin: 0;
   text-align: left;
   font-size: 25px;
+}
+
+#header dl {
+  margin: 0;
 }
 
 #header dd {
@@ -54,62 +57,68 @@ table {
   color: #5C0000;
 }
 
-#header dl>a {
+a#huitiao {
   font-size: 75%;
   color: navy;
   text-decoration: none;
 }
 
-#header dl>a:hover {
+a#huitiao:hover {
   color: blue;
 }
 
-#header dl>div {
+#huitiao-popup {
   position: absolute;
-  z-index: 1000;
+  z-index: 2;
   top: 0;
   right: 0;
-  background: silver;
+  padding: 0.3ex;
+  background-color: #bddafb;
+  background: linear-gradient(#bddafb, white);
   border: 1px solid black;
-  font-size: 75%;
+  border-radius: 1ex;
   white-space: nowrap;
+  text-align: left;
+  line-height: 60%;
 }
 
-#header dl h2 {
-  font-size: 75%;
-  color: yellow;
-  background: navy;
+#huitiao-popup a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-weight:bold;
+  color: black;
+  text-shadow:0 1px 0 white;
 }
 
-#header form {
-  padding: 0.5ex;
+#huitiao-popup a:hover {
+  color: red;
 }
 
-#header form label>div {
+#huitiao-popup form {
+  padding: 0.2ex;
+}
+
+#huitiao-popup form p
+{
+  margin: 0;
   font-size: 62%;
+  font-weight: bold;
 }
 
-#header form>div {
-  font-size: 75%;
-}
-
-#header form input, #header form textarea {
+#huitiao-popup input, #huitiao-popup textarea {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-a.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-decoration: none;
-  color: lime;
+* html #huitiao-popup input, * html #huitiao-popup textarea {
+  width: 15em;
 }
 
-a.close:hover {
-  color: red;
+#huitiao-popup label div {
+  font-size: 50%;
 }
 
 #hmenu {
