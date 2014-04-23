@@ -37,7 +37,7 @@
 <td id='zhi'>
 <h1>{{ page.title }}</h1>
 {{ content }}
-{% unless page.no-disqus %}
+{% unless page.no-disqus %}{% if site.data.tokens.disqus %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 !function(){
@@ -47,7 +47,7 @@
 }();
 </script>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-{% endunless %}
+{% endif %}{% endunless %}
 </td>
 </tr></table>
 
