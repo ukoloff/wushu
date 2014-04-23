@@ -18,9 +18,10 @@ __E-mail__: daode.ural@mail.ru
 
 __Группа в Контакте__: [vk.com/wushu66](http://vk.com/wushu66)
 
-## Места тренировок
+{% if site.data.tokens.yandex-maps %}## Места тренировок
 
 <center>
 <script type="text/javascript" charset="utf-8"
 src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid={{site.data.tokens.yandex-maps}}&width=100%25&height=450"></script>
 </center>
+{% endif %}
