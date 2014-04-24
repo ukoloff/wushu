@@ -108,13 +108,10 @@ table {
 
 #huitiao-popup input, #huitiao-popup textarea {
   width: 100%;
+  -width: 15em;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
-
-* html #huitiao-popup input, * html #huitiao-popup textarea {
-  width: 15em;
 }
 
 #huitiao-popup label div {
