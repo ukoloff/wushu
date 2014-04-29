@@ -3,6 +3,7 @@ layout: default
 title:  Галерея
 css:    fotky
 js:     fotky
+no-disqus: true
 ---
 <div id='fotky'>
 Зачекайте, будь ласка, завантаження даних...
