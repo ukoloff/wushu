@@ -9,3 +9,4 @@ js:     fotky
 <script type='text/fotky'>
 stanislav-ukolov@y *
 </script>
+</div>
