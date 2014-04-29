@@ -76,7 +76,7 @@ table {
   background-color: #bddafb;
   background: linear-gradient(#bddafb, white);
   border: 1px solid black;
-  border-radius: 1ex;
+  border-radius: 0.5ex;
   white-space: nowrap;
   text-align: left;
   line-height: 60%;
