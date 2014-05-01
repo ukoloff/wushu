@@ -17,13 +17,16 @@
       <dd>Наш телефон</dd>
       <dt>+7(908)6397870</dt>
     </dl>{% if site.data.tokens.simple-form %}
-    <a href='#' id='huitiao' class='{{ site.data.tokens.simple-form }}'>Позвоните мне!</a>{% endif %}
+    <a href='#' id='x-huitiao' class='{{ site.data.tokens.simple-form }}'>Позвоните мне!</a>{% endif %}
   </div>
 </div>
 
 <div id='header2'>
 <a id='logo' href='/' title='Золотой дракон'>&#37329;&#40845;</a>
 <span id='title'>Ушу в Екатеринбурге</span>
+<span id='tel'><div>+7(908)6397870</div>{% if site.data.tokens.simple-form %}
+<a href='#' id='huitiao' class='{{ site.data.tokens.simple-form }}'>Позвоните мне!</a>{% endif %}
+</span>
 </div>
 
 <div id='hmenu' class='noise'>
