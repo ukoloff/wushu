@@ -20,6 +20,7 @@ table {
 }
 
 #header {
+  display: none;
   position: relative;
   margin: auto;
   width: 988px;
@@ -59,14 +60,19 @@ table {
 
 #header2 {
   text-align: left;
-  font-size: 300%;
   background: navy;
   color: white;
 }
 
-#header2 a {
+#header2 #logo {
   text-decoration: none;
   color: gold;
+  font-size: 300%;
+}
+
+#header2 #title {
+  vertical-align: 0.4ex;
+  font-size: 200%;
 }
 
 #huitiao {
