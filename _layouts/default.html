@@ -11,21 +11,22 @@
 </head><body>
 
 <div id='header'>
-  <div id='title'></div>
-  <div id='phone'>
-    <dl>
-      <dd>Наш телефон</dd>
-      <dt>+7(908)6397870</dt>
-    </dl>{% if site.data.tokens.simple-form %}
+  <a id='logo' href='/' title='Золотой дракон'>&#37329;&#40845;</a>
+  <span id='title'>Ушу в Екатеринбурге</span>
+  <span id='tel'>
+    <div>+7(908)6397870</div>{% if site.data.tokens.simple-form %}
     <a href='#' id='huitiao' class='{{ site.data.tokens.simple-form }}'>Позвоните мне!</a>{% endif %}
-  </div>
+  </span>
 </div>
 
 <div id='hmenu' class='noise'>
 {% for z in site.data.hmenu %}<a
   href="{{z.url}}">{{z.text}}</a>{% endfor %}
 </div>
-
+{% unless site.github %}
+<div class='devel'>{%for link in site.data.devlinks %}
+<a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>{% endfor %}
+</div>{% endunless %}
 <table><tr>
 <td id='vmenu'>{% for z in site.data.vmenu %}{% capture EOLS %}
   {% assign pageurl = page.url | remove: 'index.html' %}
@@ -57,8 +58,4 @@
 {% if year0 < year %}{{year0}} - {% endif %}{{year}},
 {{ site.name }}
 </div>
-{% unless site.github %}
-<div class='devel'>{%for link in site.data.devlinks %}
-<a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>{% endfor %}
-</div>{% endunless %}
 </body></html>

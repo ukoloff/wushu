@@ -24,46 +24,44 @@ table {
 }
 
 #header {
-  position: relative;
-  margin: auto;
-  width: 988px;
-  height: 286px;
-  background-image: url(/huabao/header.png);
+  text-align: left;
+  padding: 0.2ex;
+  background: navy;
+  color: white;
+}
+
+#header:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#header #logo {
+  text-decoration: none;
+  color: gold;
+  font-size: 300%;
+  margin-right: 1ex;
 }
 
 #header #title {
-  position: absolute;
-  left: 280px;
-  top: 0px;
-  width: 386px;
-  height: 284px;
-  background-image: url(/huabao/htext.png);
+  vertical-align: 0.4ex;
+  font-size: 200%;
 }
 
-#header #phone {
-  position: absolute;
-  left: 700px;
-  top: 110px;
-  text-align: left;
-  font-size: 25px;
-}
-
-#header dl {
-  margin: 0;
-}
-
-#header dd {
-  margin: 0;
-  font-weight: bold;
-}
-
-#header dt {
-  color: #5C0000;
+#header #tel {
+  display: inline-block;
+  position: relative;
+  -position: absolute;
+  -top: 0;
+  -right: 0;
+  margin: 1ex 0;
+  float: right;
+  text-align: right;
 }
 
 #huitiao {
-  font-size: 75%;
-  color: navy;
+  font-size: 90%;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -83,7 +81,7 @@ table {
   border-radius: 0.5ex;
   white-space: nowrap;
   text-align: left;
-  line-height: 60%;
+  color: black;
 }
 
 #huitiao-popup a {
@@ -106,7 +104,6 @@ table {
 #huitiao-popup form p
 {
   margin: 0;
-  font-size: 62%;
   font-weight: bold;
 }
 
@@ -119,7 +116,7 @@ table {
 }
 
 #huitiao-popup label div {
-  font-size: 50%;
+  font-size: 80%;
 }
 
 #hmenu {
@@ -202,7 +199,6 @@ table {
 
 .devel {
   position: absolute;
-  top: 0;
   right: 0;
   font-size: 75%;
   text-align: right;
