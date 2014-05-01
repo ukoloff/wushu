@@ -194,8 +194,7 @@ table {
 }
 
 .devel {
-  x-position: absolute;
-  top: 0;
+  position: absolute;
   right: 0;
   font-size: 75%;
   text-align: right;

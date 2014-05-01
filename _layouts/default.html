@@ -23,7 +23,10 @@
 {% for z in site.data.hmenu %}<a
   href="{{z.url}}">{{z.text}}</a>{% endfor %}
 </div>
-
+{% unless site.github %}
+<div class='devel'>{%for link in site.data.devlinks %}
+<a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>{% endfor %}
+</div>{% endunless %}
 <table><tr>
 <td id='vmenu'>{% for z in site.data.vmenu %}{% capture EOLS %}
   {% assign pageurl = page.url | remove: 'index.html' %}
@@ -55,8 +58,4 @@
 {% if year0 < year %}{{year0}} - {% endif %}{{year}},
 {{ site.name }}
 </div>
-{% unless site.github %}
-<div class='devel'>{%for link in site.data.devlinks %}
-<a href="{{link[1].url}}" target="{{link[0]}}">{{link[1].text}}</a>{% endfor %}
-</div>{% endunless %}
 </body></html>
