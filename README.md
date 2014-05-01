@@ -13,11 +13,17 @@
     + [Markdown](http://ru.wikipedia.org/wiki/Markdown) - простой язык, транслируемый в HTML
     + [Textile](http://ru.wikipedia.org/wiki/Textile_(%D1%8F%D0%B7%D1%8B%D0%BA_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8))
   - [Liquid](http://liquidmarkup.org/) - язык шаблонов для генерации сложных страниц
+    (документация:
+      [1](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers),
+      [2](http://docs.shopify.com/themes/liquid-basics))
   - [CSS](http://ru.wikipedia.org/wiki/CSS) - язык описания дизайна Веб-страниц
   - [YAML](http://ru.wikipedia.org/wiki/YAML) - язык записи произвольных данных в удобочитаемом виде
 * [Disqus](http://disqus.com/) - сервис комментариев
 * [Dot TK](http://www.dot.tk/) - бесплатная регистрация доменных имён .tk
 * [Simple Form](http://getsimpleform.com/) - отправка веб-форм с уведомлением владельцу
+  - [HuiTiao](https://github.com/ukoloff/huitiao) - встраивание формы контакта на статический сайт
+* [Fotky](https://github.com/ukoloff/fotky) - встраивание галерей Яндекс-Фоток (и Google Picasa)
+  на статический сайт
 
 ## Установка
 
