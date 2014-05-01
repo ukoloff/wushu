@@ -9,10 +9,25 @@
   white-space: nowrap;
 }
 
+#fotky a {
+  text-decoration: none;
+}
+
 #fotky .thumbnail a {
   display: block;
   overflow: hidden;
   text-align: center;
-  text-decoration: none;
   color: navy;
+}
+
+#fotky img {
+  border: none;
+}
+
+#fotky .left {
+  float: left;
+}
+
+#fotky .right {
+  float: right;
 }
