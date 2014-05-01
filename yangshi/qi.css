@@ -57,6 +57,18 @@ table {
   color: #5C0000;
 }
 
+#header2 {
+  text-align: left;
+  font-size: 300%;
+  background: navy;
+  color: white;
+}
+
+#header2 a {
+  text-decoration: none;
+  color: gold;
+}
+
 #huitiao {
   font-size: 75%;
   color: navy;
