@@ -48,8 +48,7 @@
 3. Установить необходимые пакеты
 
   ```sh
-  gem install jekyll
-  gem install jekyll-redirect-from
+  gem install github-pages
   gem install wdm
   ```
 
