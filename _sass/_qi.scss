@@ -23,66 +23,6 @@ table {
   border-collapse: collapse;
 }
 
-#huitiao {
-  font-size: 90%;
-  color: yellow;
-  text-decoration: none;
-}
-
-#huitiao:hover {
-  text-decoration: underline;
-}
-
-#huitiao-popup {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  padding: 0.3ex;
-  background-color: #bddafb;
-  background: linear-gradient(#bddafb, white);
-  border: 1px solid black;
-  border-radius: 0.5ex;
-  white-space: nowrap;
-  text-align: left;
-  color: black;
-}
-
-#huitiao-popup a {
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  font-weight:bold;
-  color: black;
-  text-shadow:0 1px 0 white;
-}
-
-#huitiao-popup a:hover {
-  color: red;
-}
-
-#huitiao-popup form {
-  padding: 0.2ex;
-}
-
-#huitiao-popup form p
-{
-  margin: 0;
-  font-weight: bold;
-}
-
-#huitiao-popup input, #huitiao-popup textarea {
-  width: 100%;
-  -width: 15em;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#huitiao-popup label div {
-  font-size: 80%;
-}
-
 #zhi {
   width: 100%;
   padding: 1ex;
