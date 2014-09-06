@@ -119,36 +119,6 @@ table {
   font-size: 80%;
 }
 
-#vmenu {
-  white-space: nowrap;
-  padding: 0.5ex;
-  background-color: #70767c;
-  background-repeat: repeat-y;
-  text-align: left;
-  vertical-align: top;
-}
-
-#vmenu a {
-  display: block;
-  padding: 1ex;
-  text-decoration: none;
-  color: white;
-}
-
-#vmenu a:hover {
-  background-color: gray;
-}
-
-#vmenu a.active {
-  color: black;
-  background: silver;
-}
-
-#vmenu div {
-  margin-left: 1em;
-  font-size: 90%;
-}
-
 #zhi {
   width: 100%;
   padding: 1ex;
