@@ -6,6 +6,11 @@
   &:hover
     text-decoration: underline
 
+=box-sizing($value)
+  box-sizing: $value
+  -moz-box-sizing: $value
+  -webkit-box-sizing: $value
+
 #huitiao-popup
   position: absolute
   z-index: 2
@@ -41,9 +46,7 @@
   input, textarea
     width: 100%
     -width: 15em
-    box-sizing: border-box
-    -moz-box-sizing: border-box
-    -webkit-box-sizing: border-box
+    +box-sizing(border-box)
 
   label div
     font-size: 80%
