@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Расписание
+css: schedule
 ---
 <span class='info'>Синим</span> выделены действующие в настоящее время тренировки.
 

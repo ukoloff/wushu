@@ -202,23 +202,6 @@ table {
   color: blue;
 }
 
-table.schedule {
-  margin: auto;
-  text-align: center;
-}
-
-table.schedule td, table.schedule th {
-  border: solid 1px black;
-}
-
-table.schedule td.on {
-  background: #afeeee;
-}
-
-table.schedule td.off {
-  color: red;
-}
-
 #paginator {
   text-align: center;
   border-top: 1px dashed black;
