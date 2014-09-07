@@ -1,0 +1,2 @@
+    <link rel="stylesheet" href="/yangshi/qi.css">{% if page.css %}{% for x in page.css %}
+    <link rel="stylesheet" href="{% if x contains '/' or x contains '.' %}{{ x }}{% else %}/yangshi/{{ x }}.css{% endif %}">{% endfor %}{% endif %}
