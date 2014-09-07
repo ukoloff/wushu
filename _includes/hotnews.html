@@ -1,0 +1,20 @@
+{% capture EOLS %}
+{% assign paginate = page.paginate %}
+{% assign posts = 0 %}
+{% unless paginate %}{% assign paginate = site.paginate %}{% endunless %}
+{% unless paginate %}{% assign paginate = 3 %}{% endunless %}
+{% endcapture %}{% for imp in (0..1) %}{% for z in site.posts %}{% assign active = 0 %}{% capture EOLS %}
+  {% if z.important %}
+    {% if imp == 0 %}{% assign active = 1 %}{% endif %}
+  {% else %}
+    {% if imp > 0 and posts < paginate %}{% assign active = 1 %}{% endif %}
+  {% endif %}
+  {% endcapture %}{% if active > 0 %}{% assign posts = posts | plus: 1 %}
+<!-- {{posts}} -->
+<div class='excerpt'>
+<h2><a href="{{ z.url }}">{{ z.title }}</a></h1>
+<div>
+{{ z.excerpt }}
+</div></div>{% endif %}{% endfor %}{% endfor %}
+
+<div id='paginator'><a href='/xinwen/'>Все новости</a></div>
