@@ -1,0 +1,8 @@
+<td id='vmenu'>{% for z in site.data.vmenu %}{% capture EOLS %}
+  {% assign pageurl = page.url | remove: 'index.html' %}
+  {% endcapture %}<a href="{{z.url}}"{% if pageurl == z.url %} class='active'{%endif%}>{{z.text}}</a>{% capture EOLS %}
+  {% endcapture %}{% if z.items %}{% assign urls = z.items | map: 'url' %}{% if pageurl == z.url or urls contains pageurl ) %}
+  <div>{% for zz in z.items %}
+    <a href="{{zz.url}}"{% if pageurl == zz.url %} class='active'{%endif%}>{{zz.text}}</a>{% endfor %}
+  </div>{% endif %}{% endif %}{% endfor %}
+</td>
