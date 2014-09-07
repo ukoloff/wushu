@@ -1,0 +1,2 @@
+    <script src="/js/huitiao.js"></script>{% if page.js %}{% for x in page.js %}
+    <script src="{% if x contains '/' or x contains '.' %}{{ x }}{% else %}/js/{{ x }}.js{% endif %}"></script>{% endfor %}{% endif %}

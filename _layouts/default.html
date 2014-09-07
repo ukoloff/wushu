@@ -4,20 +4,9 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">{% unless site.github %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">{% endunless %}
-{% include css.html %}
-    <script src="/js/huitiao.js"></script>{% if page.js %}{% for x in page.js %}
-    <script src="{% if x contains '/' or x contains '.' %}{{ x }}{% else %}/js/{{ x }}.js{% endif %}"></script>{% endfor %}{% endif %}
-</head><body>
+{% include css.html %}{% include js.html %}</head><body>
 
-<div id='header'>
-  <a id='logo' href='/' title='Золотой дракон'>&#37329;&#40845;</a>
-  <span id='title'>Ушу в Екатеринбурге</span>
-  <span id='tel'>
-    <div>+7(908)6397870</div>{% if site.data.tokens.simple-form %}
-    <a href='#' id='huitiao' class='{{ site.data.tokens.simple-form }}'>Позвоните мне!</a>{% endif %}
-  </span>
-</div>
-
+{% include header.html %}
 <div id='hmenu' class='noise'>
 {% for z in site.data.hmenu %}<a
   href="{{z.url}}">{{z.text}}</a>{% endfor %}
@@ -52,9 +41,5 @@
 </td>
 </tr></table>
 
-<div id='footer' class='noise'>
-&copy;{% assign year0 = '2014' %}{% assign year = site.time | date: '%Y' %}
-{% if year0 < year %}{{year0}} - {% endif %}{{year}},
-{{ site.name }}
-</div>
+{% include footer.html %}
 </body></html>
