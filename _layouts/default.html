@@ -2,7 +2,8 @@
 <html><head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">{% unless site.github %}
+    <meta name="viewport" content="width=device-width">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">{% unless site.github %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">{% endunless %}
 {% include css.html %}{% include js.html %}</head><body>
 
